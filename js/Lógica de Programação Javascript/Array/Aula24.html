@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDOS24</title>
+</head>
+<body>
+  <div id="tela"></div>
+
+  <script>
+    var produtos = [
+        {'nome': 'caneta', 'preco': 2, 'estoque': 10},
+        {'nome': 'lapis' , 'preco': 3, 'estoque': 20},
+        {'nome': 'borracha', 'preco': 5, 'estoque': 12}
+
+    ];
+
+    var msg ='';
+
+    for(var i =0; i< produtos.length; i++){
+      msg += '<h2>Produto: ' + produtos[i].nome + '<h2>';
+      msg += '<h4>Preço: ' + produtos[i].preco + '<h4>';
+      msg += '<h5>Estoque: ' + produtos[i].estoque + '<h4>';
+
+    }
+
+    document.querySelector('#tela').innerHTML =msg;
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDOS13</title>
+</head>
+<body>
+  <button onclick="calcular('1')">+</button>
+  <button onclick="calcular('2')">-</button>
+  <button onclick="calcular('3')">/</button>
+  <button onclick="calcular('4')">*</button>
+  
+  <div id="valor"></div>
+
+  <script>
+    var n = parseFloat(prompt("Digite um valor"));
+    
+    
+    function resultado(){
+      var acesso = document.querySelector('#valor');       
+      acesso.innerHTML=n;
+    }
+     
+    function calcular(simbolo){
+       var n1 = parseFloat(prompt("Digite outro valor"));
+       
+       switch(simbolo){
+        case '1':
+          n += n1;
+          break;
+        case '2':
+          n -= n1;
+          break;
+        case '3':
+          n /= n1;
+          break;
+        case '4':
+          n *= n1;
+          break;
+       }
+       resultado();
+    }
+
+
+
+  </script>
+</body>
+</html>

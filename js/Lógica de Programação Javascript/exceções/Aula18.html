@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDOS18</title>
+</head>
+<body>
+  <button onclick="realizarCalculo('1')">+</button>
+  <button onclick="realizarCalculo('2')">-</button>
+  <button onclick="realizarCalculo('3')">/</button>
+  <button onclick="realizarCalculo('4')">*</button>
+  
+  <div id="valor"></div>
+
+  <script>
+    var n1 = parseFloat(prompt("Digite um valor"));
+    resultado(n1)
+    
+    function realizarCalculo(simbolo){
+
+      var n = document.querySelector('#valor').textContent;
+      n = parseFloat(n);
+
+      var n1 = parseFloat(prompt("Digite outro valor"));
+      
+      try {
+        var reslt = calcular(simbolo,n,n1)
+        
+      } catch (e) {
+        alert(e);
+        return;
+        
+      }
+      
+      
+      resultado(reslt);
+    };
+    
+    function resultado(mensagem){
+      var acesso = document.querySelector('#valor');       
+      acesso.innerHTML=mensagem;
+    }
+     
+
+    function calcular(simbolo, n , n1 ){
+      
+      if(simbolo !== '+' && simbolo !== '-' && sombolo !== '/' && simbolo !== '*'){
+
+        throw new Error('Digite um simbolo válido');
+      }
+       
+
+      if( isNaN(n) || isNan(n1)){
+        throw new Error('Chama passando somente numeros')
+
+      }
+        var numero = null;
+
+       switch(simbolo){
+        case '1':
+          numero = n + n1;
+          break;
+        case '2':
+          numero = n - n1;
+          break;
+        case '3':
+          numero = n / n1;
+          break;
+        case '4':
+          numero = n * n1;
+          break;
+       }
+       return numero;
+       
+    }
+
+
+
+  </script>
+</body>
+</html>

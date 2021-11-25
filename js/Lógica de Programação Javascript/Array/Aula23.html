@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDOS23</title>
+</head>
+<body>
+
+  <div id="tela"></div>
+    
+
+    <script>
+
+      var produtos = new Object();
+      
+      produtos.preco = 1.90
+      produtos.estoque =10
+      produtos.nome =  'caneta'
+      produtos.precoAtacado = 1
+      alert(produtos.nome + " --> Estoque: " + produtos.estoque + " preço: " + produtos.preco + " preço atacado: " + produtos.precoAtacado);
+      
+      produtos.comprar = function(qtd){
+      
+      if(!qtd){
+          qtd =1;
+        }
+
+        console.log('comprou caneta');
+
+        this.estoque = this.estoque - qtd;
+        console.log(this.estoque);
+      }
+      var msg = '';
+
+      msg += "nome: " + produtos.nome + "<br>";
+      msg += "preco: " + produtos.preco + "<br>";
+      msg += "estoque: " + produtos.estoque + "<br>";
+      msg += "preço Atacado: " + produtos.precoAtacado + "<br>";
+
+      document.querySelector('#tela').innerHTML = msg;
+
+
+    </script>
+</body>
+</html>

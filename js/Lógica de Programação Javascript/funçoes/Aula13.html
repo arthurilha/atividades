@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDOS13</title>
+</head>
+<body>
+  <button onclick="somar()">+</button>
+  <button onclick="subtrair()">-</button>
+  <button onclick="dividir()">/</button>
+  <button onclick="multiplicar()">*</button>
+  
+  <div id="valor"></div>
+
+  <script>
+    var n = parseFloat(prompt("Digite um valor"));
+    
+    var acesso = document.querySelector('#valor');
+
+    acesso.innerHTML= n;
+
+    function somar(){
+      var n2 = parseFloat(prompt("Digite um numero para somar"));
+      acesso.innerHTML = n + n2;
+      var resultado = n + n2;
+      n = resultado;
+    }
+    function subtrair(){
+      var n2 = parseFloat(prompt("Digite um numero para subtrair"));
+      acesso.innerHTML = n - n2;
+      var resultado = n - n2;
+      n = resultado;
+    }
+    function dividir(){1
+      var n2 = parseFloat(prompt("Digite um numero para dividir"));
+      acesso.innerHTML = n / n2;
+      var resultado = n / n2;
+      n = resultado;
+    }
+    function multiplicar(){
+      var n2 = parseFloat(prompt("Digite um numero para multiplicar"));
+      acesso.innerHTML = n * n2;
+      var resultado = n * n2;
+      n = resultado;
+    }
+
+
+
+  </script>
+</body>
+</html>

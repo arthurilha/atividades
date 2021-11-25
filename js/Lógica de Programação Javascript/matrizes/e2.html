@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="tela"></div>
+
+  <script>
+    var alunos = [
+    {'nome': 'Arthur', 'nota1': 2, 'nota2': 10},
+    {'nome': 'felipe', 'nota1': 5, 'nota2': 6},
+    {'nome': 'anna', 'nota1': 9, 'nota2': 7}  
+  ]
+   
+   var msg ='';
+   
+
+
+    for(var i = 0; i < alunos.length; i++ ){
+      var mediAnual = alunos[i].nota1 + alunos[i].nota2 ;
+      var media = mediAnual /2;
+      msg += '<h2>Aluno: ' + alunos[i].nome +'<h2>';
+      msg += '<h4>AV1: ' + alunos[i].nota1 + '<h4>';
+      msg += '<h4>AV2: ' + alunos[i].nota2 + '<h4>';
+      msg += '<h4>Média Anual do aluno:'+ media +'<h4>';
+      
+    }
+   document.querySelector('#tela').innerHTML =msg;
+  </script>
+  
+</body>
+</html>

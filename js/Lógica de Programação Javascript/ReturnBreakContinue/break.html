@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+  function testeSalto(){
+    for(var i =0; i< 10; i++){
+      if(i === 5){
+        break; /// break ele nao para a funcao ele para o loop ou seja o for nesse exemplo fazendo que quando o numero for 5 ele pule direto console.log imprimindo uma linha tracejada e encerrando a funcao pela return fim da funçao
+      }
+      console.log(i);
+        }
+        console.log('-----');
+        return 'fim da função';
+
+  }
+
+  var teste = testeSalto();
+  console.log(teste);
+
+
+</script>
+</html>

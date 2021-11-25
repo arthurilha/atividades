@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="tela"></div>
+</body>
+<script>
+
+  var alunos=[
+
+  {nome: 'daniel', id: 12345, endereco: new Endereco({logradouro:'rua da vitoria' ,n:65 ,cidade:'dubai',complemento:32 , estado:'rj', cep:23324})},
+  {nome: 'tais', id: 34567, endereco: new Endereco({logradouro:'rua do tesouro' ,n:22,cidade:'curitiba',complemento:54 , estado:'pr', cep:44565})},
+  {nome: 'fernando', id: 87690, endereco: new Endereco({logradouro:'rua teixerinha',n:45 ,cidade:'niteroi',complemento:33 , estado:'rj', cep:98980})},
+  {nome: 'luana', id: 67901, endereco: new Endereco({logradouro:'rua vieria' ,n:3,cidade:'aracaju',complemento:233 , estado:'sg', cep:43521})},
+  {nome: 'gabi', id: 23214, endereco: new Endereco({logradouro: 'rua jacinto' ,n:7,cidade:'porto alegre',complemento:23 , estado:'rs', cep:32565})},
+  {nome: 'tevez', id: 53432, endereco: new Endereco({logradouro:'rua olinda' ,n:2 ,cidade:'sao paulo',complemento: 2 , estado: 'sp', cep:12313})}
+  ]
+
+  var enderecos=[];
+
+  for(var i = 0; i < alunos.length; i++){
+    enderecos[i] = alunos[i].endereco;
+
+  }
+  console.log(enderecos)
+
+
+
+</script>
+</html>

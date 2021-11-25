@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDOS16</title>
+</head>
+<body>
+  <button onclick="alerta()">CalcularAlert</button>
+  <button onclick="tela()">CalcularTela</button>
+
+  <div id="valor"></div>
+  <script>
+
+      function calcularArea(largura, altura){
+        return largura*altura;          
+        };
+
+        function alerta(){
+            var n = parseFloat(prompt("Digite a largura"));
+            var n1 = parseFloat(prompt("Digite a altura"));
+
+            var resultado = calcularArea(n , n1);
+            alert("resultado: " + resultado);
+
+
+        }
+        function tela(){
+          var n = parseFloat(prompt("Digite a largura"));
+          var n1 = parseFloat(prompt("Digite a altura"));
+
+          var resultado = calcularArea(n , n1);
+
+          var acesso = document.querySelector('#valor');       
+          acesso.innerHTML=resultado;
+        };
+
+        
+
+
+  </script>
+
+
+
+</body>
+</html>

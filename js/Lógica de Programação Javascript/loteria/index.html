@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOTERIA</title>
+  <style>
+    body{
+      font-family : sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>LOTERIA DO FIM DE ANO</h1>
+  <button onclick="loteria()">Sortear numeros</button>
+  <div id="tela">
+  </div>
+  <div id="resultado">
+  </div>
+  <script>
+
+
+    var numeros = loteria();
+
+
+    ////////////////////////////////////////////
+    function loteria(){
+        function numeroSorteado(){
+          return Math.floor(Math.random() * 60)
+        }
+        var numeros = [];
+
+        while( numeros.length < 6){
+          var sortear = numeroSorteado();
+          if(numeros.indexOf(sortear) === -1){
+            numeros[numeros.length]= sortear;
+          }
+            
+          console.log(numeros.length, sortear)
+        }
+
+        document.querySelector('#tela').innerHTML = numeros;
+
+      }
+
+
+ 
+
+ 
+  </script>
+  
+</body>
+</html>

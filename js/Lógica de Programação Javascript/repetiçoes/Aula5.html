@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDO5</title>
+</head>
+<body>
+  <script>
+      var n1 = parseInt(prompt(' JOGADOR 1 DIGITE UM NUMERO: '));
+
+      var n2 = parseInt(prompt(' JOGADOR 2 DIGITE UM NUMERO: '));
+
+      if(n1 == n2 ){
+        alert(' EMPATE, FIM DE JOGO')
+      }
+      else{
+        var sorteio = parseInt(Math.random() * 2 )
+        alert('Numero sorteado: ' + sorteio)
+
+        if(sorteio ===0 && n1 < n2 || sorteio ===1 && n1> n2){
+          alert('JOGADOR 1 VENCEDOR');
+        }
+        else{
+          alert('JOGADOR 2 VENCEDOR');
+        }
+
+    /*    if(sorteio === 0 ){
+            if(n1 < n2){
+              alert('JOGADOR 1 VENCEDOR');
+            }
+            else{
+              alert('JOGADOR 2 VENCEDOR')
+            }
+        }
+        else{
+          if(n1 > n2){
+              alert('JOGADOR 1 VENCEDOR');
+            }
+            else{
+              alert('JOGADOR 2 VENCEDOR')
+            }
+
+        }*/
+      }
+  </script>
+</body>
+</html>

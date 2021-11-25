@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  function fibonacci(n){
+
+        var a = 1;
+        var b = 0;
+        var temp;
+
+      while(n--){
+         temp = a;
+         a= a + b;
+         b = temp; 
+      }
+      return b;
+      // n =3, n=2 temp=1 a=1+0=1 b=temp=1 | n=1 temp=1 a=1+1=2 b=temp=1 | n=0 temp = 2 a=2+1 = 3 b=temp=2
+
+      //fibo =1 1 2 3 5 8
+  }
+
+  function fibonacci2(n){
+
+      if(n<=2) return 1;
+      return fibonacci2(n-1) + fibonacci2(n-2);
+  }
+
+  console.log(fibonacci2(3));//2
+  console.log(fibonacci2(6));//8
+
+</script>
+</html>

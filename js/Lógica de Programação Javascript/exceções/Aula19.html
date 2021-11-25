@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDOS19</title>
+</head>
+<body>
+ <button onclick="tela()">clique para calcular</button>
+
+  <script>
+
+    function tela(){
+
+      var l = parseFloat(prompt('Digite o lado do retangulo'));
+  
+      var a = parseFloat(prompt('Digite a altura do rentagulo'));
+
+      
+      
+      try {
+        var resultado = calcular(l,a);
+        
+      } catch (error) {
+        alert(error);
+        return;
+      }
+      
+      alert('resultado:' + resultado);
+    }
+  
+  
+  function calcular(lado,altura){
+
+    if( lado === undefined || altura === undefined){
+    throw new Error('Precisa receber numeros')
+    }
+
+    if( isNaN(lado) || isNaN(altura)){
+      throw new Error('Digite somemnte numeros');  
+    }
+
+
+    return lado *  altura;
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUDOS12</title>
+</head>
+<body>
+  
+  
+  
+  
+  <button onclick="mostrarTabuada()">criar tabuada</button>
+  <button onclick="limparTabuada()">Limpar tabuada</button>
+  <div id="titulo"></div>
+
+  
+  <script>
+    
+    
+    
+    function mostrarTabuada(){
+      
+      var n = parseFloat(prompt("Digite um numero: "));
+      limparTabuada();
+      var i = 1;
+      
+      while(i<100){
+        mensagem += n+ 'x' + i +' = '+ (n*i) + ' <br> ';
+        i++;
+      }
+      acesso.innerHTML=mensagem;
+    }
+      function limparTabuada(){
+        
+            mensagem = '';
+            acesso.innerHTML = mensagem;
+            
+      }
+    
+      
+
+    
+    
+    var acesso = document.querySelector("#titulo");
+    var mensagem = '';
+  </script>
+</body>
+</html>

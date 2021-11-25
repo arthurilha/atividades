@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="tela"></div>
+</body>
+<script>
+
+  var alunos = [
+      {nome: 'maria', notas: [2,5,6,7]},
+      {nome: 'joana', notas: [4,5,8,8]},
+      {nome: 'gustavo', notas: [2,3,9,9]},
+      {nome: 'paulinho', notas: [2,5,9,8]},
+      {nome: 'chapeco', notas: [3,4,6,8]},
+      {nome: 'ze', notas: [4,8,2,3]}
+  ];
+
+  var msg='';
+  var mediaAlunos = 0;
+
+  for(var i=0; i< alunos.length; i++){
+
+    msg+= '<p><b> '+alunos[i].nome+'   </b></p>';
+    var notas = alunos[i].notas;
+    msg+='<p>notas: '+ notas.join('|') + '</p>';
+    var totalNotas= 0;
+    for(var j=0; j< notas.length; j++){
+      totalNotas += notas[j];
+    }
+    var media = totalNotas / notas.length;
+    mediaAlunos += media;
+    msg += '<p> a media é: ' + media + '</p><hr>'
+  }
+  
+   msg+= '<p> A média de todos os alunos é: ' + (mediaAlunos/alunos.length).toFixed(2) + '</p>'
+  document.querySelector('#tela').innerHTML = msg;
+</script>
+</html>
