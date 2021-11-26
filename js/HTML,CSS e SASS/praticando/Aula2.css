@@ -1,0 +1,19 @@
+body{
+  background-color: rgba(206, 248, 143,.7);
+}
+
+h1{
+  color: rgb(0, 128, 255);
+}
+
+h2{
+  color: #5eff00;
+}
+h3{
+  color: hsl(150, 100%, 44%);
+  margin-top: 5rem;
+}
+ul{
+  border: solid;
+  margin: 2rem;
+}
