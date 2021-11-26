@@ -1,0 +1,16 @@
+
+
+/*[seletor]{
+  [regra]: [valor];
+}*/
+
+/*Quando começa com ponto = CLASSE
+
+.card .card-title h3{
+     font-size: 2px;
+}
+
+ele esta pegando todos H3 da classe CARD-TITLE que tbm está dentro da classe CARD
+
+OBS: SEMPRE PENSE EM UM ESTRUTURA CASCATA QUE PRA ACESSA UM TENHO QUE ACESSAR TODAS
+*/
