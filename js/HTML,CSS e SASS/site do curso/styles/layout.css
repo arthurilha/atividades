@@ -1,0 +1,20 @@
+/*declarar variaveis*/
+:root{      
+/* CSS HEX */
+--borda: #7400b8ff;/*purple*/
+--french-violet: #6930c3ff;
+--terceira: #5e60ceff; /*slate-blue*/
+--tufts-blue: #5390d9ff;
+--blue-jeans: #4ea8deff;
+--vivid-sky-blue: #48bfe3ff; /*vivid-sky-blue*/
+--sky-blue-crayola: #56cfe1ff;
+--segunda: #64dfdfff;/*medium-turquoise*/
+--primeirab: #72efddff;/*turquoise*/
+--primeira: #80ffdbff; /*aquamarine*/
+}
+
+
+body{
+  font-family: roboto, sans-serif;
+}
+

@@ -1,0 +1,22 @@
+
+.hero {
+  background-color:var(--primeira);
+  height: 100vh;
+
+  display: flex; /*libera outras açoes como o flex-box*/
+  align-items: center;
+}
+
+.hero-title{
+  background-color:var(--terceira);
+  text-align: center;
+  padding: 5% 0;
+  width: 100%;
+}
+
+.hero-title h1 {
+  color: var(--segunda);
+}
+.hero-title h2 {
+  color: var(--segunda);
+}
