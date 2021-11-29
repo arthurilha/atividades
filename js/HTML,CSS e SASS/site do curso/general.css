@@ -30,25 +30,29 @@ body h2 {
 }
 
 .hero {
-  background-color: #80ffdbff;
+  background-color: #fff;
   height: 100vh;
   display: flex;
   /*libera outras açoes como o flex-box*/
   align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/js/HTML,CSS e SASS/site do curso/styles/assets/fundo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
-  background-color: #5e60ceff;
+  background-color: rgba(128, 255, 219, 0.5);
   text-align: center;
   padding: 5% 0;
   width: 100%;
 }
 .hero-title h1 {
-  color: #64dfdfff;
+  color: #6930c3ff;
 }
 .hero-title h2 {
-  color: #64dfdfff;
-  background-color: #5e60ceff;
+  color: #5e60ceff;
+  background-color: rgba(128, 255, 219, 0.01);
 }
 
 .cards {
@@ -61,9 +65,8 @@ body h2 {
   /* row ----->   /  row-reverse <--------/ column é uma coluna*/
   align-items: center;
 }
-
-.card {
-  background-color: #64dfdfff;
+.cards .card {
+  background-color: #fff;
   width: 400px;
   height: 400px;
   text-align: center;

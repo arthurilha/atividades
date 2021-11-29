@@ -1,25 +1,31 @@
 
 .hero {
-  background-color:$primeira-sass;
+  background-color:$sexta-sass;
   height: 100vh;
 
   display: flex; /*libera outras açoes como o flex-box*/
   align-items: center;
+
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/js/HTML,CSS e SASS/site do curso/styles/assets/fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
 .hero-title{
-  background-color:$quarta-sass;
+  background-color:adjust-color($color: $primeira-sass, $alpha: -0.5);
   text-align: center;
   padding: 5% 0;
   width: 100%;
 
   h1 {
-    color:$terceira-sass;
+    color:$quinta-sass;
   }
 
   h2 {
-    color: $terceira-sass;
-    background-color: $quarta-sass;
+    color: $quarta-sass;
+    background-color: adjust-color($color: $primeira-sass, $alpha: -0.99);
   }
 }
 

@@ -7,12 +7,12 @@
   justify-content: space-evenly;
   /* row ----->   /  row-reverse <--------/ column é uma coluna*/
   align-items: center;
- 
+  
+  .card{
+    background-color:$sexta-sass;
+    width: 400px;
+    height: 400px;
+    text-align:center;
+  }
 }
 
-.card{
-  background-color:$terceira-sass;
-  width: 400px;
-  height: 400px;
-  text-align:center;
-}
