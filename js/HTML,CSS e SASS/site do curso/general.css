@@ -49,9 +49,10 @@ body h2 {
 }
 .hero-title h1 {
   color: #6930c3ff;
+  font-size: 5em;
 }
 .hero-title h2 {
-  color: #5e60ceff;
+  color: #fff;
   background-color: rgba(128, 255, 219, 0.01);
 }
 

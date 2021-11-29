@@ -21,10 +21,11 @@
 
   h1 {
     color:$quinta-sass;
+    font-size: 5em;
   }
 
   h2 {
-    color: $quarta-sass;
+    color: $sexta-sass;
     background-color: adjust-color($color: $primeira-sass, $alpha: -0.99);
   }
 }
