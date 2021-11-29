@@ -1,0 +1,23 @@
+.advantages{
+  height: 40vh;
+  background-color: $primeira-sass;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text{
+    text-align: center;
+    width: 25vw;
+    color: $sexta-sass;
+    font-size: 1.5em;
+    padding: 40px;
+
+    h3{
+      color: $quarta-sass;
+    }
+
+    p{
+      padding: 0px 15px 15px 15px;
+    }
+  }
+}

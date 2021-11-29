@@ -1,7 +1,7 @@
 
 .cards {
-  height: 100vh;
-  background-color:var(--primeirab);
+  height: 60vh;
+  background-color:$segunda-sass;
   display: flex; /*libera outras açoes como o flex-box*/
   flex-direction: row;
   justify-content: space-evenly;
@@ -11,7 +11,7 @@
 }
 
 .card{
-  background-color: var(--segunda);
+  background-color:$terceira-sass;
   width: 400px;
   height: 400px;
   text-align:center;

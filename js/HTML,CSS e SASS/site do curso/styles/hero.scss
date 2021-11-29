@@ -1,6 +1,6 @@
 
 .hero {
-  background-color:var(--primeira);
+  background-color:$primeira-sass;
   height: 100vh;
 
   display: flex; /*libera outras açoes como o flex-box*/
@@ -8,15 +8,18 @@
 }
 
 .hero-title{
-  background-color:var(--terceira);
+  background-color:$quarta-sass;
   text-align: center;
   padding: 5% 0;
   width: 100%;
+
+  h1 {
+    color:$terceira-sass;
+  }
+
+  h2 {
+    color: $terceira-sass;
+    background-color: $quarta-sass;
+  }
 }
 
-.hero-title h1 {
-  color: var(--segunda);
-}
-.hero-title h2 {
-  color: var(--segunda);
-}

@@ -1,0 +1,32 @@
+/*declarar variaveis
+:root{      
+CSS HEX 
+--purple: #7400b8ff;purple
+--titulos: #6930c3ff;french-violet
+--faixa: #5e60ceff; slate-blue
+--tufts-blue: #5390d9ff;
+--blue-jeans: #4ea8deff;
+--cards: #48bfe3ff; vivid-sky-blue
+--sky-blue-crayola: #56cfe1ff;
+--tituloPrincipal: #64dfdfff;medium-turquoise
+--fundo2: #72efddff;turquoise
+--fundo1: #80ffdbff; aquamarine
+}*/
+
+$primeira-sass: #80ffdbff; /*aquamarine*/
+$segunda-sass: #72efddff;/*turquoise*/
+$terceira-sass: #64dfdfff;/*medium-turquoise*/
+$quarta-sass:#5e60ceff; /*slate-blue*/
+$quinta-sass:#6930c3ff;/*french-violet*/
+$sexta-sass:#fff;/*white*/
+
+body{
+  font-family: roboto, sans-serif;
+
+h2{
+    text-align: center;
+    color:$quinta-sass;
+    margin: 0;
+    background-color: $terceira-sass;
+  }
+}

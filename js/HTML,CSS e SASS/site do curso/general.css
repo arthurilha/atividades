@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*declarar variaveis
+:root{      
+CSS HEX 
+--purple: #7400b8ff;purple
+--titulos: #6930c3ff;french-violet
+--faixa: #5e60ceff; slate-blue
+--tufts-blue: #5390d9ff;
+--blue-jeans: #4ea8deff;
+--cards: #48bfe3ff; vivid-sky-blue
+--sky-blue-crayola: #56cfe1ff;
+--tituloPrincipal: #64dfdfff;medium-turquoise
+--fundo2: #72efddff;turquoise
+--fundo1: #80ffdbff; aquamarine
+}*/
+/*aquamarine*/
+/*turquoise*/
+/*medium-turquoise*/
+/*slate-blue*/
+/*french-violet*/
+/*white*/
+body {
+  font-family: roboto, sans-serif;
+}
+body h2 {
+  text-align: center;
+  color: #6930c3ff;
+  margin: 0;
+  background-color: #64dfdfff;
+}
+
+.hero {
+  background-color: #80ffdbff;
+  height: 100vh;
+  display: flex;
+  /*libera outras açoes como o flex-box*/
+  align-items: center;
+}
+
+.hero-title {
+  background-color: #5e60ceff;
+  text-align: center;
+  padding: 5% 0;
+  width: 100%;
+}
+.hero-title h1 {
+  color: #64dfdfff;
+}
+.hero-title h2 {
+  color: #64dfdfff;
+  background-color: #5e60ceff;
+}
+
+.cards {
+  height: 60vh;
+  background-color: #72efddff;
+  display: flex;
+  /*libera outras açoes como o flex-box*/
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* row ----->   /  row-reverse <--------/ column é uma coluna*/
+  align-items: center;
+}
+
+.card {
+  background-color: #64dfdfff;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+
+.advantages {
+  height: 40vh;
+  background-color: #80ffdbff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages .text {
+  text-align: center;
+  width: 25vw;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 40px;
+}
+.advantages .text h3 {
+  color: #5e60ceff;
+}
+.advantages .text p {
+  padding: 0px 15px 15px 15px;
+}
+
+.contat {
+  background-color: #72efddff;
+  height: 80vh;
+  align-items: center;
+}
+.contat form {
+  display: flex;
+  flex-direction: column;
+  margin: 300px;
+  padding: 0 20vw;
+  align-items: center;
+}
+.contat form * {
+  height: 5vh;
+  width: 800px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+.contat form button {
+  background-color: #5e60ceff;
+  color: #fff;
+  width: 10vw;
+}
+
+footer {
+  height: 20vh;
+  background-color: #80ffdbff;
+}
+footer .footer-info {
+  margin-top: 9vh;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=general.css.map */

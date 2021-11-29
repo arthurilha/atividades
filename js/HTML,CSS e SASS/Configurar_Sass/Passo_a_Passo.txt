@@ -1,0 +1,36 @@
+//////////////////////////////////////////////////////
+Comandos Sass:
+
+1 passo: criar um arquivo na pasta styles com .scss
+ex: geral.scss
+
+2 passo: no cmd digitar:
+ sass geral.scss geral.css
+
+3 passo: vai ser criado dois arquivos 
+  geral.css e geral.css.map
+
+4 passo: botar ele para fora da pasta styles
+
+5 passo: linkar corretamente no index.html com o geral.css
+  <link rel="stylesheet" href="./geral.css">
+
+////////////////////////////////////////////////////
+
+Compilar:
+ sass styles/geral.scss geral.css
+
+////////////////////////////////////////////////////
+
+Compilar automaticamente:
+
+abrir dois CMD na pasta do projeto
+
+no primeiro digitar: hrs
+
+no segundo sass styles/geral.scss geral.css -- watch
+
+obs: dessa forma voce vai poder fazer qualquer alteração que vai ser alterado automaticamente
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
