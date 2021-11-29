@@ -1,7 +1,14 @@
+/*@mixin centralize-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
 
 .cards {
   height: 60vh;
-  background-color:$segunda-sass;
+  background-color:$sexta-sass;
   display: flex; /*libera outras açoes como o flex-box*/
   flex-direction: row;
   justify-content: space-evenly;
@@ -9,10 +16,37 @@
   align-items: center;
   
   .card{
-    background-color:$sexta-sass;
     width: 400px;
     height: 400px;
     text-align:center;
+
+    position: relative;
+
+    img{
+      height: 400px;
+      width: 400px;
+    }
+
+    .legend{
+      position: absolute;
+      bottom: 0px;
+      background-color: $primeira-sass;
+      height: 10%;
+      
+      
+      footer{
+          height: 10%;
+          width: 400px;
+          background-color: $primeira-sass;
+          
+          p{
+            
+            margin: 0.3em;
+            font-size: 1.4em;
+            color: $quinta-sass;
+          }
+      }
+    }
   }
 }
 

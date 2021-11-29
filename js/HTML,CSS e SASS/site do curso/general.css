@@ -55,9 +55,15 @@ body h2 {
   background-color: rgba(128, 255, 219, 0.01);
 }
 
+/*@mixin centralize-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
 .cards {
   height: 60vh;
-  background-color: #72efddff;
+  background-color: #fff;
   display: flex;
   /*libera outras açoes como o flex-box*/
   flex-direction: row;
@@ -66,10 +72,30 @@ body h2 {
   align-items: center;
 }
 .cards .card {
-  background-color: #fff;
   width: 400px;
   height: 400px;
   text-align: center;
+  position: relative;
+}
+.cards .card img {
+  height: 400px;
+  width: 400px;
+}
+.cards .card .legend {
+  position: absolute;
+  bottom: 0px;
+  background-color: #80ffdbff;
+  height: 10%;
+}
+.cards .card .legend footer {
+  height: 10%;
+  width: 400px;
+  background-color: #80ffdbff;
+}
+.cards .card .legend footer p {
+  margin: 0.3em;
+  font-size: 1.4em;
+  color: #6930c3ff;
 }
 
 .advantages {
@@ -94,7 +120,7 @@ body h2 {
 }
 
 .contat {
-  background-color: #72efddff;
+  background-color: #fff;
   height: 80vh;
   align-items: center;
 }
@@ -106,6 +132,7 @@ body h2 {
   align-items: center;
 }
 .contat form * {
+  background-color: #80ffdbff;
   height: 5vh;
   width: 800px;
   margin: 5px 0;
