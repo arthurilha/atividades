@@ -1,0 +1,16 @@
+#fundo{
+  background-color: #EDF2F4;
+}
+#header{
+  background-color: #fff;
+}
+#titulo{
+  color: #00d167;
+}
+#container{
+ margin-top: 80px; 
+}
+#cardss{
+ display: flex;
+ justify-content: center;
+}
