@@ -1,0 +1,37 @@
+#tela-login{
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #EDF2F4;
+}
+
+#fundo{
+
+    background-color: #EDF2F4;
+
+}
+#logo{
+  height: 200px;
+  width: 200px;
+  margin-left: 80px;
+}
+
+#titulo{
+  text-align: center;
+  color: #007bff;
+}
+
+#exampleInputEmail1{
+  border-radius: 10px;
+}
+#exampleInputPassword1{
+  border-radius: 10px;
+}
+#check{
+  text-align: center;
+}
+#botao{
+  border-radius: 10px;
+}
