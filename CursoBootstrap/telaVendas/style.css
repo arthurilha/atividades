@@ -1,0 +1,41 @@
+#fundo{
+  background-color: #EDF2F4;
+}
+
+#header{
+  background-color: #fff;
+  
+}
+#titulo{
+  color: #5f62e8;
+}
+#addon-wrapping{
+ background-color: #5f62e8;
+ color: #fff;
+}
+h6{
+  color: #5f62e8;
+}
+#pag{
+  color: #5f62e8;
+}
+#bolinha{
+  height: 15px;
+  width: 15px;
+}
+#botao{
+  background-color:#5f62e8;
+   width: 100%;
+   
+}
+#compra{
+  display:flex;
+  justify-content:right;
+  margin-left: 1050px;
+  margin-top: -1230px;
+}
+
+#resgate{
+  background-color: #5f62e8;
+  border: 0;
+}

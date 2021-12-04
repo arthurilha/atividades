@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Venda</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body id="fundo">
+    <nav class="navbar navbar-light bg-light p-0" style="width: 1800px;"  >
+      <div class="container-fluid shadow  bg-body rounded col-md-12" id="header">
+        <a class="navbar-brand " href="#" >
+          <div class="container ">
+            <div class="row">
+          <img src="./logo.gif" alt="" width="50" height="50" class="d-inline-block align-text-top ">
+           <h2 class=" px-3 m-0"id="titulo">Fofana</h2>
+          </div>
+        </div>
+        </a>
+        </div>
+    </nav>
+
+      <div class="container m-5">
+        
+      <form class="row g-4">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label"><h5>Nome Própio</h5></label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Nome Própio">
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label for="inputPassword4" class="form-label"><h5>Apelido</h5></label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Apelido" >
+      </div>
+      
+
+      <h5 class="ml-3 mb-0">Nome do Usuário</h5>
+      <div class="input-group flex-nowrap  p-3" style="width: 100%;">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input type="text" class="form-control p-0 " placeholder=" User" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+    </form>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label"><h5 class="m-0">Email <h6>(Opcional)</h6></h5></label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder=" Nome@exemplo.com">
+    </div>
+
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label"><h5 class="m-0">Endereço</h5></label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" Rua: Jardim de Eden ">
+    </div>
+
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label"><h5 class="m-0">Complemento</h5><h6>(Opcional)</h6></label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apartamento ou lote">
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-5 ">
+        <label><h5>País</h5></label>
+        <select class="custom-select" id="">
+          <option selected>País</option>
+          <option value="1">Espanha</option>
+          <option value="2">Holanda</option>
+          <option value="3">França</option>
+          <option value="3">Brasil</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label class=""><h5>Estado / UF</h5></label>
+        <select class="custom-select" id="">
+          <option selected>Estado / UF...</option>
+          <option value="1">Rio Grande do Sul</option>
+          <option value="2">Rio de Janeiro</option>
+          <option value="3">São Paulo</option>
+          <option value="3">Santa Catarina</option>
+        </select>
+      </div>
+        <div class="col-md-3">
+          <label class=""><h5>Cep</h5></label>
+          <input type="numeric" class="form-control" placeholder="00000-000" />
+        </div>
+      </div>
+      <hr>
+    
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <div class="custom-control custom-checkbox ">
+      <input class="custom-control-input" type="checkbox" >
+      <label class="custom-control-label" for="customCheck1">Endereço de envio é o mesmo que meu endereço de
+        cobrança</label>
+    </div>
+    <div class="custom-control custom-checkbox ">
+      <input class="custom-control-input" type="checkbox" >
+      <label class="custom-control-label" for="customCheck2">Guarde essas informações para a próxima vez</label>
+    </div>
+    <hr>
+  
+ 
+  <!------------------------------------------------------------------------------------------------------------>
+
+   <h2 class=" pt-3" id="pag">Pagamentos</h2>
+
+   <div class="form-check pt-3" >
+    <input class="form-check-input" type="radio" name="flexRadioDefault"  id="bolinha">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Pix
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault"  id="bolinha">
+    <label class="form-check-label" for="flexRadioDefault2">
+      Paypal
+    </label>
+  </div>
+    <div class="form-check" >
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="bolinha">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Boleto
+      </label>
+    </div>
+    <div class="form-check" >
+      <input class="form-check-input" type="radio" name="flexRadioDefault"  checked id="bolinha">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Cartão de Crédito
+      </label>
+    </div>
+
+    <form class="row g-3 pt-5">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label"><h5>Nome do Cartão</h5></label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Jair ventura">
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label for="inputPassword4" class="form-label"><h5>Numero do Cartão</h5></label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="0000 0000 0000 0000" >
+      </div>
+  
+     
+        <div class="col-md-2">
+          <label for="inputEmail4" class="form-label"><h5>Vencimento</h5></label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="00/00">
+        </div>
+  
+        <div class="col-md-2 mb-3">
+          <label for="inputPassword4" class="form-label"><h5>CVV</h5></label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="000" >
+        </div>
+
+      </form>  
+    <hr>
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary border-0" type="button" id="botao">Finalizar Compra</button>
+    </div>
+    <!--------------------------------------------------------------------------------------------------->
+  </div>
+  <div class="col-md-4" id="compra">
+    <div class="text-left">
+      <div class="">
+        <div class="group text-right">
+          <h3 class="text-muted d-flex justify-content-between align-items-center p-1">
+            Carrinho <span class="badge" style="background-color:#5f62e8; color: #fff;">5959</span>
+          </h3>
+        </div>
+        <ul class="list-group ">
+          <li class="list-group-item d-flex justify-content-between ">
+            <div>
+              <h6>Primeiro Produto</h6>
+              <small class="text-muted">Descrição</small>
+            </div>
+            <span class="text-muted">R$ 6,00</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between ">
+            <div>
+              <h6>Segundo Produto</h6>
+              <small class="text-muted">Descrição</small>
+            </div>
+            <span class="text-muted">R$ 900,00</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between ">
+            <div>
+              <h6>Terceiro Produto</h6>
+              <small class="text-muted">Descrição</small>
+            </div>
+            <span class="text-muted">R$ 5,00</span>
+          </li>
+          <li class="list-group-item-secondary list-group-item d-flex justify-content-between ">
+            <div>
+              <h6 class=" text-success">Código Promocional</h6>
+              <small class="text-muted">Descrição</small>
+            </div>
+            <span class="text-success ">-200,00R$</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between ">
+            <div>
+              <h6>Total (BRL)</h6>
+
+            </div>
+            <span class="font-weight-bold">R$ 711,00</span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="input-group py-3">
+        <input type="text" class="form-control " placeholder="Cupom">
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-secondary " id="resgate">Resgatar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
