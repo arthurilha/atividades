@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+      let promessa = new Promise(( resolve, reject) => {
+          try {
+              setTimeout(() => {
+                resolve('com sucesso')
+              }, 3000);
+
+
+          } catch (error) {
+            
+            setTimeout(() => {
+              reject(e);
+            },3000);
+
+          }
+      })
+
+      setTimeout(() => {
+        console.log(promessa)
+      }, 5000);
+
+
+
+  </script>
+</body>
+</html>

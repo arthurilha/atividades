@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function* teste(){
+      yield 'teste 1'
+      yield 'teste 2'
+      yield 'teste 3'
+
+      return 'teste 4'
+    }
+
+      let generate = teste();
+
+      console.log(generate.next())
+      console.log(generate.next())
+      console.log(generate.next())
+      console.log(generate.next())
+
+
+  </script>
+</body>
+</html>
