@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    //rest
+  
+      function soma(...p){
+        let resultado =0;
+        //console.log(p);
+        
+        p.forEach(n => resultado += n)
+        
+        return resultado;
+      }
+
+      let x = soma(5,7,8,6,5,4,88,78,87)
+      //console.log("resultado = ", x);
+
+
+      function multiplicador(m, ...n){
+        //console.log(m)
+        //console.log(n)
+        let result =0;
+
+        n.forEach(c =>{
+        
+       result += m* c
+        
+         }
+       )
+
+       return result;
+      }
+      let w = multiplicador(5,6,7,8,9,0)
+      console.log("result =" , w)
+  </script>
+</body>
+</html>
