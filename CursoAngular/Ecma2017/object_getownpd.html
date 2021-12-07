@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  let objeto = {
+
+    nome : 'arthur',
+    profissional:{
+      site:'arthur.com',
+      profissao: 'programador e investidor'
+    },
+
+    hobbies: [
+      {id: 1 ,hobby: 'fazer trilha'},
+      {id: 2, hobby: 'fazer natação'}
+    ],
+    pais: 'brasil'
+  }
+
+  console.log(Object.getOwnPropertyDescriptors(objeto));// para ter acesso a dados mais restritos dos bojetos
+  /*
+  // writable quando for falso nao é possivel alterar o valor do objeto 
+  Object.defineProperty(objeto, 'nome', {
+      values: 'Arthur',
+      writable: false
+  })
+*/
+
+
+  /*enumerable quando definido como false ele nao aparece em estruturas de repetiçoe como for
+  for(let propriedades in objeto ){
+    console.log(propriedades, objeto[propriedades])
+  }
+  Object.defineProperty(objeto, 'hobbies',{
+    enumerable: false
+  })
+  Object.defineProperty(objeto, 'profissional',{
+    enumerable: false
+  })
+
+  console.log(Object.getOwnPropertyDescriptors(objeto));
+
+  console.log('---------------------------------------------------');
+
+  for(let propriedades in objeto){
+    console.log(propriedades, objeto[propriedades])
+  }
+  */
+
+
+  /*configurable: quando definido como false nao é possivel dar delete nos objetos, so sera possivel alterar o valor de writable para true our false
+
+  console.log(Object.getOwnPropertyDescriptors(objeto));
+  Object.defineProperty(objeto,'pais',{
+    configurable: false,
+  })
+
+  console.log(Object.getOwnPropertyDescriptors(objeto));
+
+*/
+
+</script>
+
+</body>
+</html>
