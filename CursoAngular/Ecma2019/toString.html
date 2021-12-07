@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    class Carro {
+
+       constructor(marca, modelo , ano){
+         this.marca =marca;
+         this.ano= ano;
+         this.modelo =modelo;
+       }
+       toString(){
+         return `Carro da marca ${this.marca}, de modelo ${this.modelo} é do ano de ${this.ano}`;
+       }
+    }
+
+      let carro = new Carro('fiat', 'palio' ,2001)
+        console.log(carro.toString());
+  
+
+  </script>
+</body>
+</html>
