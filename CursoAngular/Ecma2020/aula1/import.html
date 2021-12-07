@@ -1,0 +1,14 @@
+<html>
+<body>
+  
+</body>
+<script type="module">
+
+import { saudacao, getCep} from './import/lib.mjs'
+console.log(saudacao());
+
+getCep('90050101')
+.then(dados => console.log(dados))
+
+</script>
+</html>
