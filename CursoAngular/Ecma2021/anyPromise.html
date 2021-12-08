@@ -1,0 +1,38 @@
+<html>
+  <body>
+    
+  </body>
+  <script>
+   
+      const p1 = new Promise((resolve, reject) =>{
+
+        setTimeout(() => resolve('p1 resolvida'),2000);
+
+      })
+
+      const p2 = new Promise((resolve, reject) =>{
+
+        setTimeout(() => resolve('p2 resolvida'),4000);
+
+      })
+
+      const p3 = new Promise((resolve, reject) =>{
+
+        setTimeout(() => resolve('p3 resolvida'),1000);
+
+      })
+
+      let promise = [p1,p2,p3];
+
+      Promise.any(promise)
+      .then((resolvida)=>{
+        console.log('resolvida')
+      })
+      //// caso todoas sejam reject no lugar de resolve é necessario tratar o erro assim:
+      .catch((erro)=>{
+        console.log(erro)
+      })
+    
+
+  </script>
+</html>
