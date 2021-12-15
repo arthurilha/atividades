@@ -4,17 +4,17 @@
 
     <div class="row">
       <div class="col-sm-6 pb-5">
-        <app-progresso></app-progresso>
+        <app-progresso [progresso]='progresso'></app-progresso>
       </div>
       <div class="col-sm-6 d-flex justify-content-end">
-        <app-tentativas></app-tentativas>
+        <app-tentativas [tentativas]='tentativas'></app-tentativas>
       </div>
     </div>
 
     <div class="row">
       <div class="col">
         <h6>{{instrucao}}</h6>
-        <p>{{frase[0].fraseEng}}</p>
+        <p>{{rodadaFrase.fraseEng}}</p>
 
         <div class="mb-3">
           <textarea 
@@ -29,7 +29,12 @@
     <div class="row">         
       <div class="col">  
         <div class="d-flex justify-content-end pt-4">
-          <button type="button" class="btn btn-primary ">Verificar</button>
+          <button 
+           type="button"
+           class="btn btn-primary border-0"
+           (click)='verificarResposta()'>
+           Verificar
+          </button>
         </div>      
       </div>
     </div>

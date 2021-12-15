@@ -1,3 +1,6 @@
-<img [src]="coracaoVazio" />
-<img [src]="coracaoVazio" />
-<img [src]="coracaoVazio " />
+
+<img 
+    *ngFor="let c of Coracao"
+    [src]="c.exibiCoracao()"
+  />
+

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Frase } from '../shared/frase.model';
 import { Frases } from './frase-mock';
+
 @Component({
   selector: 'app-painel',
   templateUrl: './painel.component.html',
@@ -13,8 +14,16 @@ export class PainelComponent implements OnInit {
   public instrucao: string = 'Traduza a frase abaixo:'
   public resposta: string =''
 
+  public rodada: number =0;
+  public rodadaFrase : Frase
+
+  public progresso : number = 0
+
+  public tentativas: number =3
+
   constructor(){
-    console.log(this.frase)
+   this.rodadaFrase = this.frase[this.rodada]
+   console.log(this.rodadaFrase)
   }
 
   ngOnInit(): void {
@@ -22,8 +31,23 @@ export class PainelComponent implements OnInit {
 
   public atualizaResposta(resposta: Event): void{
     this.resposta =(<HTMLInputElement>resposta.target).value
-    console.log(this.resposta)
+    
   }
 
+  public verificarResposta(): void{
+
+    if(this.rodadaFrase.frasePtbr == this.resposta){
+      this.progresso = this.progresso + (100/this.frase.length)
+      this.rodada ++ 
+      this.rodadaFrase = this.frase[this.rodada]
+    }
+    else{
+      // diminuir variavel tentativa
+      this.tentativas--
+      if(this.tentativas === -1){
+        alert('voce morreu')
+      }
+    }
+  }
   
 }
