@@ -1,6 +1,7 @@
 
-<img 
+   <!--<img 
     *ngFor="let c of Coracao"
     [src]="c.exibiCoracao()"
-  />
+  />-->
 
+  <i *ngFor="let heart of Hearts" [class]="heart.viewHeart()"></i>
