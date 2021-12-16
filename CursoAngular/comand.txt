@@ -1,0 +1,38 @@
+1 = para criar novo projeto:
+
+ng new *nome do app* 
+
+2 = mudar de css para scss
+
+3= dar npm instal no app
+
+4= baixar o bootstrap 
+
+npm install bootstrap
+
+5= baixar o jquery 
+
+npm install jquery --save
+
+6= baixar o tether // facilita o posicionamento de elementos de forma simplificada
+
+npm install tether --save
+
+7= baixar font as=wesome dos icones
+
+npm install font-awesome --save 
+
+//////////////////////////////////////////////////////////////////////////
+
+configuraçoes no angular.json
+
+"styles": [
+              "node_modules/font-awesome/css/font-awesome.css",//icone
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",//bootstrap css
+              "src/styles.scss"
+            ],
+"scripts": [
+              "node_modules/tether/dist/js/tether.min.js",// tether
+              "node_modules/jquery/dist/jquery.min.js",//jquery
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"//bootstrap javascript
+            ]
