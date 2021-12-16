@@ -36,3 +36,11 @@ configuraçoes no angular.json
               "node_modules/jquery/dist/jquery.min.js",//jquery
               "node_modules/bootstrap/dist/js/bootstrap.min.js"//bootstrap javascript
             ]
+
+////////////////////////////////////////////////////////////////////////////////
+
+para criar os componentes como topo, rodape painel...
+
+ng g c *nome ex: topo* 
+
+apos isso apagar o arquivo spec pois nao aprendemos teste unitarios ainda
