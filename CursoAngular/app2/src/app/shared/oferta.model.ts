@@ -7,6 +7,6 @@ export class Oferta{
         public anunciante: string =''
         public valor: number =0
         public destaque: boolean =true
-        public imagens: Array<object> =[]
+        public imagens: Array<object> = []
       
 }

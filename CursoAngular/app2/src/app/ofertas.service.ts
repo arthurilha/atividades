@@ -1,3 +1,4 @@
+
 import { Oferta } from "./shared/oferta.model"
 
 
@@ -56,8 +57,21 @@ export class OfertasService{
     
   ]
     
-    public getOfertas(): Oferta[] {
+public getOfertas(): Array<Oferta> {
       
       return this.ofertas
     }
+
+public getOferta2(): Promise<Oferta[]>{
+  return new Promise((resolve, reject) => {
+
+    let deuCerto = true
+    if(deuCerto){
+      setTimeout(()=>resolve(this.ofertas), 5000)
+    }
+    else{
+      reject({codigo_erro: 404, mensagem_erro:'servidor não encontrado'})
+    }
+  })
+}
 }
